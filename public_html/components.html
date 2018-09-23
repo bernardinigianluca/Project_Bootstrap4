@@ -10,7 +10,7 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
           crossorigin="anonymous">
 
-  <title>Forms</title>
+  <title>Components</title>
   </head>
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -46,6 +46,9 @@
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -54,52 +57,66 @@
         </div>
 </nav>   
       <div class="container" style="margin-top:70px">
-          <form>
-              <fieldset class="form-group">
-                  <label for="lbemail">Email address</label>
-                  <input type="email" class="form-control" id="lbemail" placeholder="Inserisci la mail: name@esempio.com" required>
-              </fieldset> 
-              <fieldset class="form-group">
-                  <label for="lbpwd">Password</label>
-                  <input type="password" class="form-control" id="lbpwd" placeholder="Inserisci la password" required="">
-              </fieldset>
-              <fieldset class="form-group">
-                  <button type="submit" class="btn btn-success" name="submit" value="submit">Invia</button>
-              </fieldset>
-              
-          </form>
+          <h2 id="alerts">Alerts</h2><hr class="col-xs-12 bg-dark">
+         <div class="alert alert-primary" role="alert">
+            Congratulazioni! I dati sino stati inseriti.
+         </div>
       </div>
+      <div class="container">
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Congratulazioni!</strong> I dati sono stati inseriti.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+      </div>
+      <!--Modal alerts -->
+      <div class="container">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Open modal
+      </button>
+      </div>
+      
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Badge -->
       <div class="container" style="margin-top:70px">
-          <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Example select</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect2">Example multiple select</label>
-          <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        </form>
+          <h2 id="badge">Badge</h2><hr class="col-xs-12 bg-dark">
+            <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+            <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+            <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+            <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+            <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+            <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+      </div>
+      
+      <!-- Breadcrumb -->
+      <div class="container" style="margin-top:70px">
+          <h2 id="breadcrumb">Breadcrumb</h2><hr class="col-xs-12 bg-dark">
+            
+      </div>
+      
+      <!-- Jumbotrom -->
+      <div class="container" style="margin-top:70px">
+          <h2 id="jumbotrom">jumbotrom</h2><hr class="col-xs-12 bg-dark">
+            
       </div>
       
     <!-- Optional JavaScript -->
@@ -109,3 +126,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
+
